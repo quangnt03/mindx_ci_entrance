@@ -3,7 +3,7 @@
 function alternatingSums(a) {
     let results = [0, 0]
     a.forEach((val, id) => {
-        results[(id + 1) % 2] += val
+        results[id % 2] += val
     })
     return results.toString()
 }
